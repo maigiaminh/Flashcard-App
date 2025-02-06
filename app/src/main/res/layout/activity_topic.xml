@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_color"
+    tools:context=".TopicActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        tools:context=".TopicActivity">
+        <LinearLayout
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/returnBtn"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/bevietnampro_bold"
+                    android:textColor="@color/white"
+                    android:text="TOPIC"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <ImageButton
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/optionMenuBtn"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/baseline_menu_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/flashCardViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                        android:id="@+id/scrollPagerIndicator"
+                        app:spi_visibleDotCount="5"
+                        android:layout_height="wrap_content"
+                        app:spi_dotSize="10dp"
+                        app:spi_dotSelectedSize="15dp"
+                        android:layout_gravity="center_horizontal"
+                        app:spi_dotColor="@color/white"
+                        app:spi_dotSelectedColor="@color/primary_button_color"
+                        android:layout_width="match_parent">
+                    </ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:id="@+id/progressBar"
+                    android:indeterminateTint="@color/secondary_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginHorizontal="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/topicName"
+                android:text="Topic"
+                android:fontFamily="@font/bevietnampro_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/bevietnampro_bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/topicDesc"
+                android:text="Mô tả"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:paddingHorizontal="15dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/topicUserImg"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/flashcard_icon"
+                    app:shapeAppearanceOverlay="@style/circle"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/tertiary_text_color"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:fontFamily="@font/bevietnampro_bold"
+                    android:id="@+id/topicUserName"
+                    android:text="Topic Owner"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:fontFamily="@font/bevietnampro_bold"
+                    android:id="@+id/vocabularyCount"
+                    android:textColor="@color/white"
+                    android:text="Vocabularies"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/learnByFlashCardBtn"
+                android:fontFamily="@font/bevietnampro_bold"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_login_btn"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:text="LEARN BY FLASHCARD"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:paddingHorizontal="15dp"
+                android:id="@+id/learnByQuizBtn"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_login_btn"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:text="LEARN BY QUIZ"
+                android:fontFamily="@font/bevietnampro_bold"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:paddingHorizontal="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/learnByTypingBtn"
+                android:layout_marginTop="15dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_login_btn"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:text="LEARN BY TYPING"
+                android:fontFamily="@font/bevietnampro_bold"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginHorizontal="15dp"
+                android:orientation="vertical"
+                android:id="@+id/userStatisticsLayout"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/fullScreenProgressBar"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/secondary_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

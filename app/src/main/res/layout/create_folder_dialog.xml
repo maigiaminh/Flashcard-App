@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="15dp"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/secondary_color"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Create new folder"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:id="@+id/folderNameEdt"
+        android:textColorHint="@color/tertiary_text_color"
+        android:hint="Tên thư mục"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/folderDesc"
+        android:textColorHint="@color/tertiary_text_color"
+        android:hint="Mô tả (tùy chọn)"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/createFolderCancelBtn"
+            android:text="HỦY"
+            android:background="@android:color/transparent"
+            app:backgroundTint="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tertiary_text_color"/>
+        <Button
+            android:id="@+id/createFolderBtn"
+            android:text="TẠO"
+            android:background="@android:color/transparent"
+            app:backgroundTint="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tertiary_text_color"/>
+    </LinearLayout>
+</LinearLayout>

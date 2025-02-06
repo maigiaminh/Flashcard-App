@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="Oct 4, 2023"
+        android:orientation="vertical"
+        android:background="@color/primary_color"
+        android:id="@+id/contentLayout">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/primary_button_color" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:text="LOG IN WITH YOUR ACCOUNT"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp" />
+
+
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your username"
+            android:textColorHint="@color/secondary_text_color"
+            app:backgroundTint="@color/secondary_text_color"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="USERNAME"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Enter your password"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/secondary_text_color"
+            app:backgroundTint="@color/secondary_text_color"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="PASSWORD"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ripple_login_btn"
+            android:text="Log in"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tvUserAndPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Forgot username or password?"
+            android:fontFamily="@font/bevietnampro_regular"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toTopOf="@id/tvLink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/bevietnampro_regular"
+                android:text="By signing up, I accept Flashcard's"
+                android:textColor="@color/primary_text_color"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/bevietnampro_regular"
+                android:text="Terms of service and Privacy policy"
+                android:textColor="@color/primary_text_color"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressLoading"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+</FrameLayout>
+
+

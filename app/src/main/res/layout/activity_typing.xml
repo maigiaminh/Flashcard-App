@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_color"
+    tools:context=".TypingActivity">
+    <FrameLayout
+        android:background="@color/secondary_color"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_clear_24" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/quizProgressTxt"
+            android:text="51/77"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+    <View
+        android:background="@color/secondary_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:visibility="visible"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:id="@+id/questionTxt"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:text="Test"
+            android:textColor="@color/white" />
+        <ImageView
+            android:visibility="gone"
+            android:padding="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:src="@drawable/chemes"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColorHint="@color/tertiary_text_color"
+            android:padding="10dp"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:imeActionId="666"
+            android:imeActionLabel="Some Label"
+            android:maxLines="1"
+            android:hint="Answer Here"
+            android:background="@color/secondary_color"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@+id/answerTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/skipBtn"
+            android:textColor="@color/tertiary_text_color"
+            android:background="@android:color/transparent"
+            android:text="SKIP"
+            android:textSize="10sp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+</LinearLayout>

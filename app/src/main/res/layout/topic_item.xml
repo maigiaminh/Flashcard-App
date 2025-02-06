@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/secondary_color"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAllCaps="true"
+            android:text="ENGLISH WORD"
+            android:textColor="@color/primary_button_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/removeVocabularyBtn"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_delete_24"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextVocabulary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tertiary_text_color"
+        android:background="@drawable/custom_edit_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/bevietnampro_semi_bold"
+        android:text="VOCABULARY"
+        android:textColor="@color/primary_text_color"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextMeaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/tertiary_text_color"
+        android:background="@drawable/custom_edit_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/bevietnampro_semi_bold"
+        android:text="MEANING"
+        android:textColor="@color/primary_text_color"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primary_color"
+    android:paddingVertical="15dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:layout_height="match_parent"
+    tools:context=".StudySetupActivity">
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:src="@drawable/ic_baseline_clear_24"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/topicName"
+                android:text="Topic Name"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Set up your test"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:fontFamily="@font/bevietnampro_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/test"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/questionCountTxt"
+            android:layout_weight="1"
+            android:text="Question Count"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bevietnampro_bold"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/questionCountEdt"
+            android:background="@drawable/edit_text"
+            android:layout_weight="0.2"
+            android:hint="0"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:textColorHint="@color/tertiary_text_color"
+            android:inputType="number"
+            android:layout_height="wrap_content" android:layout_width="0dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="STUDY LANGUAGE"
+            android:fontFamily="@font/bevietnampro_bold"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:background="@drawable/custom_spinner"
+            android:id="@+id/languageSpinner"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:spinnerMode="dropdown"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/secondary_color"
+        android:layout_marginVertical="30dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="SUFFLE QUESTION"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bevietnampro_bold"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:id="@+id/shuffleQuestionSwitch"
+            android:soundEffectsEnabled="true"
+            app:thumbTint="@color/primary_button_color"
+            app:trackTint="@color/tertiary_text_color"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bevietnampro_bold"
+
+            android:text="INSTANT FEEDBACK"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:id="@+id/instantFeedBackSwitch"
+            android:soundEffectsEnabled="true"
+            app:thumbTint="@color/primary_button_color"
+            app:trackTint="@color/tertiary_text_color"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bevietnampro_bold"
+
+            android:text="USING IMAGE"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:id="@+id/imageSwitch"
+            android:soundEffectsEnabled="true"
+            app:thumbTint="@color/primary_button_color"
+            app:trackTint="@color/tertiary_text_color"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <com.google.android.material.button.MaterialButton
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/startBtn"
+        android:text="START"
+        android:background="@drawable/ripple_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_color"
+    tools:context=".CreateTopicActivity"
+    android:focusableInTouchMode="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreateTopicActivity"
+        android:background="@color/primary_color">
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/secondary_color"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingEnd="24dp"
+                    android:src="@drawable/baseline_keyboard_backspace_24" />
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/bevietnampro_bold"
+                    android:text="Create Topic"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/topic_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:src="@drawable/baseline_check_24" />
+
+                <ImageView
+                    android:id="@+id/topic_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingEnd="8dp"
+                    android:src="@drawable/baseline_settings_24" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="55dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/bevietnampro_semi_bold"
+                    android:text="TITLE NAME"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edtTitleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/link"
+                    android:maxLines="1"
+                    android:fontFamily="@font/bevietnampro_semi_bold"
+                    android:hint="Tên chủ đề"
+                    android:paddingBottom="24dp"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/secondary_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_marginHorizontal="15dp"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="15dp"
+                    android:text="DESCRIPTION"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:paddingHorizontal="0dp"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:gravity="top|start"
+                    android:id="@+id/topicDescriptionEdt"
+                    android:textColor="@color/white"
+                    android:hint="Mô tả"
+                    android:textColorHint="@color/secondary_text_color"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/link"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/importCSV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableStart="@drawable/baseline_qr_code_scanner_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/bevietnampro_semi_bold"
+                    android:text="NHẬP FILE"
+                    android:textColor="@color/tertiary_text_color"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/tertiary_text_color"
+                        android:textColorHint="@color/secondary_text_color"
+                        android:textSize="16sp"
+                        android:text="PUBLIC TOPIC"
+                        android:fontFamily="@font/bevietnampro_semi_bold"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        />
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:layout_width="wrap_content"
+                        android:id="@+id/publicTopicSwitch"
+                        android:layout_marginHorizontal="15dp"
+                        app:switchPadding="10dp"
+                        android:soundEffectsEnabled="true"
+                        app:thumbTint="@color/link"
+                        app:trackTint="@color/tertiary_text_color"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/bevietnampro_semi_bold"
+                    android:text="TOPIC VOCABULARIES"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="16sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/vocabularyListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_margin="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingBottom="8dp"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/fab"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="35dp"
+                android:backgroundTint="@color/primary_button_color"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_height="wrap_content"
+                android:contentDescription="Add new vocabulary"/>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressLoading"
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+</ScrollView>
+

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="Oct 4, 2023"
+        android:orientation="vertical"
+        tools:context=".SignUpActivity"
+        android:background="@color/primary_color">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/primary_button_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:text="SIGN UP WITH AN EMAIL"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="Nov 16, 2003"
+                android:fontFamily="@font/bevietnampro_semi_bold"
+                android:textColor="@color/primary_text_color"
+                android:textSize="12sp"
+                android:textColorHint="@color/secondary_text_color"
+                app:backgroundTint="@color/secondary_text_color"/>
+
+            <ImageButton
+                android:id="@+id/calendarBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_calendar_month_24"
+                android:background="@android:color/transparent"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="DATE OF BIRTH"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="username"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"
+            android:textColorHint="@color/secondary_text_color"
+            app:backgroundTint="@color/secondary_text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="USERNAME"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="email@example.com"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"
+            android:textColorHint="@color/secondary_text_color"
+            app:backgroundTint="@color/secondary_text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="EMAIL ADDRESS"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="******"
+                android:fontFamily="@font/bevietnampro_semi_bold"
+                android:textColor="@color/primary_text_color"
+                android:textSize="12sp"
+                android:textColorHint="@color/secondary_text_color"
+                app:backgroundTint="@color/secondary_text_color"/>
+
+            <ImageButton
+                android:id="@+id/viewBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_remove_red_eye_24"
+                android:background="@android:color/transparent"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="PASSWORD"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ripple_signup_btn"
+            android:text="Sign up"
+            android:fontFamily="@font/bevietnampro_semi_bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:text="By signing up, I accept Flashcard's"
+            android:fontFamily="@font/bevietnampro_regular"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tvLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Terms of service and Privacy policy"
+            android:fontFamily="@font/bevietnampro_regular"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressLoading"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+</FrameLayout>

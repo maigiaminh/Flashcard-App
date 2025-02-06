@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:layout_marginHorizontal="10dp"
+    android:background="@drawable/topic_library_selected"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textAllCaps="true"
+            android:textColor="@color/correct_answer"
+            android:fontFamily="@font/bevietnampro_bold"
+            android:text="CORRECT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_clear_24"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end"
+            android:id="@+id/closeBtn" />
+    </FrameLayout>
+
+
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bevietnampro_regular"
+        android:textAlignment="center"
+        android:text="Your answer is correct!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

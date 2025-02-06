@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/secondary_color"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:id="@+id/addTopicOptionBtn"
+        android:layout_width="match_parent"
+        app:backgroundTint="@null"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconSize="40dp"
+        android:text="ADD TOPIC"
+        android:fontFamily="@font/bevietnampro_bold"
+        app:iconPadding="20dp"
+        android:textAlignment="textStart"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.button.MaterialButton
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:id="@+id/removeFolderOptionBtn"
+        android:layout_width="match_parent"
+        app:backgroundTint="@null"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/baseline_delete_24"
+        app:iconSize="40dp"
+        android:text="DELETE"
+        android:fontFamily="@font/bevietnampro_bold"
+        app:iconPadding="20dp"
+        android:textSize="18dp"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

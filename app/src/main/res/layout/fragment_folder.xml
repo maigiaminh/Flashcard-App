@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    android:background="@color/primary_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FolderFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/noFolderLayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/folder_lib"/>
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:fontFamily="@font/bevietnampro_bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="CREATE FOLDERS TO MANAGE YOUR TOPICS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/addFolderBtn"
+            android:padding="20dp"
+            android:layout_marginTop="50dp"
+            app:backgroundTint="@null"
+            android:textColor="@color/primary_text_color"
+            android:fontFamily="@font/bevietnampro_bold"
+            android:background="@drawable/ripple_login_btn"
+            android:text="ADD FOLDER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/folderRecyclerView"
+        android:nestedScrollingEnabled="true"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
