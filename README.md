@@ -36,29 +36,6 @@
 ---
 
 ## 📸 Screenshots
-### 📱 Flashcard Home Screen
-
-![Flashcard Home Screen Screenshot](https://raw.githubusercontent.com/maigiaminh/Flashcard-App/main/assets/images/homescreen.png)
-
-
-
-### 📖 Flashcard Study Mode
-
-![Flashcard Study Mode Screenshot](https://raw.githubusercontent.com/maigiaminh/Flashcard-App/main/assets/images/studymode.png)
-
-
-
-### 📚 Flashcard View
-
-![Flashcard View Screenshot](https://raw.githubusercontent.com/maigiaminh/Flashcard-App/main/assets/images/flashcard-view.png)
-
-
-
-### 📝 Create Topic
-
-![Topic Screenshot](https://raw.githubusercontent.com/maigiaminh/Flashcard-App/main/assets/images/topic.png)
-
-
 
 ### 📲 Screens
 
